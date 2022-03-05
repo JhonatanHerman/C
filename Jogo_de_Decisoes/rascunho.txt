@@ -1,0 +1,68 @@
+if caminho curto
+  if pular a grade
+
+  else if  nao pular a grade
+
+if caminho longo
+
+
+
+
+vetor ["pegou o item", "]
+
+
+
+
+
+
+
+-=-=-=-FINAL 1-=-=-=-
+pegou o item = 1 nao pegou = 0 ->>vet[0]
+caminho curto = 0              ->>vet[1]
+pular a grade = 0              ->>vet[2]
+
+-=-=-=-FINAL 2-=-=-=-
+pegou o item = 1               ->>vet[0]
+caminho curto = 0              ->>vet[1]
+voltar pelo longo = 1          ->>vet[2]
+desembrulhar presente = 0      ->>vet[3]
+
+-=-=-=-FINAL 3-=-=-=-
+pegou o item = 1               ->>vet[0]
+caminho curto = 0              ->>vet[1]
+voltar pelo longo = 1          ->>vet[2]
+se render = 1                  ->>vet[3]
+
+-=-=-=-FINAL 3 parte 2-=-=-=-
+nao pegou = 0                  ->>vet[0]
+caminho curto = 0              ->>vet[1]
+voltar pelo longo = 1          ->>vet[2]
+
+
+-=-=-=-FINAL 4-=-=-=-
+pegou o item = 1               ->>vet[0]
+caminho longo = 1              ->>vet[1]
+
+-=-=-=-FINAL 5-=-=-=-
+nao pegou = 0                  ->>vet[0]
+caminho longo = 1              ->>vet[1]
+
+
+
+
+
+
+
+
+printf(caminhos escolhidos pelo usuario:)
+if vet[0] == 1
+  printf(Pegou o item)
+else if vet[0] == 0 {
+  printf(nao pegou o item)
+}
+
+if vet[1] == 0{
+  escolheu o caminho curto
+}else if vet[1] == 1{
+  escolheu o caminho longo
+}
